@@ -229,6 +229,7 @@
 
   &__tab {
     border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
 
     &--link {
       border: none;
@@ -253,12 +254,13 @@
     &-card {
       position: relative;
       width: calc(100% / 4);
-      padding: 15px;
-      margin-top: 30px;
 
-      &:hover {
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        cursor: pointer;
+      &__item {
+        margin: 0 15px;
+        &:hover {
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          cursor: pointer;
+        }
       }
 
       &__img {
@@ -269,12 +271,13 @@
       & h2 {
         color: $color-grey-dark-1;
         font-size: 14px;
-        margin: 0 30px;
+        margin: 15px;
       }
 
       & h2 {
         font-weight: bold;
         margin-bottom: 25px;
+        margin-top: -10px;
       }
 
       &__action {
@@ -472,7 +475,7 @@
 }
 
 .about-us .slick-dots li button:before {
-  font-size: 40px;
+  font-size: 15px;
   width: 10px;
   height: 10px;
 }
@@ -608,7 +611,7 @@ footer {
   }
 }
 #sidebarMenu {
-  height: 500px;
+  height: 100vh;
   position: fixed;
   left: 0;
   width: 100vw;

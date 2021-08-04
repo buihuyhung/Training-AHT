@@ -10,9 +10,9 @@
   #sidebarMenu {
     display: block;
   }
-  #sidebarMenu {
-    display: none;
-  }
+  // #sidebarMenu {
+  //   display: none;
+  // }
   .header-top__logo {
     margin-left: 4rem;
     width: 165px;
@@ -20,7 +20,7 @@
   html {
     font-size: 50%;
   }
-  .section-product,
+  .section-product__tab,
   .row.footer-bottom,
   .row.footer-top,
   .header-top,
@@ -46,12 +46,15 @@
       &__action {
         display: block;
       }
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      &__item {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
     }
   }
 
   .tabcontent .tabcontent-card {
-    width: calc(100% / 2);
+    width: calc(100% / 3);
   }
 
   .row.section-brand .section-brand__img {
