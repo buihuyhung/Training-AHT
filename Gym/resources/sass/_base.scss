@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-gey-dark-2;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  background-color: $color-white-1;
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 117rem;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------- */
+/* HEADINGS  */
+/* --------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+  color: $color-grey-dark-1;
+}
+
+/* ------------------------------------------------- */
+/*  LINKS  */
+/* ------------------------------------------------- */
+
+a:link,
+a:visited {
+  color: $color-white-1;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $color-gey-dark-2;
+  border-bottom: 1px solid transparent;
+}
+
+/* ------------------------------------------------- */
+/*  LIST  */
+/* ------------------------------------------------- */
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* ------------------------------------------------- */
+/*  BUTTON  */
+/* ------------------------------------------------- */
+
+.btn-ghost {
+  &:link,
+  &:visited {
+    border: 1px solid $color-white-1;
+    color: $color-white-1;
+    padding: 13px 38px;
+    display: inline-block;
+    margin-top: 55px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &:hover {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+}

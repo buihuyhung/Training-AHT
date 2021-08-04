@@ -1,0 +1,17 @@
+$color-primary: #dd2f31;
+$color-white-1: #fff;
+
+$color-grey-dark-1: #000;
+$color-gey-dark-2: #555;
+$color-grey-dark-3: #777;
+
+$bp-largest: 75rem;
+$bp-larg: 68.75rem;
+$bp-medium: 56.25rem;
+$bp-small: 37.5rem;
+$bp-smallest: 31.25rem;
+
+@import "./base";
+@import "./layout";
+@import "./component";
+@import "./responsive";
