@@ -11,6 +11,17 @@ $bp-medium: 56.25rem;
 $bp-small: 37.5rem;
 $bp-smallest: 31.25rem;
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+
 @import "./base";
 @import "./layout";
 @import "./component";
