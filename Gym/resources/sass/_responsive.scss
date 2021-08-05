@@ -1,5 +1,30 @@
 /* TABLET  */
+@media screen and (max-width: 1700px) {
+  .section-overview {
+    &__item {
+      height: unset;
+    }
+  }
+  #section-overview__mobile .section-overview__item:nth-child(2n + 1) {
+    img {
+      height: unset;
+    }
+  }
 
+  .footer-bottom__columns.footer-bottom__mobile {
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+
+    &:nth-child(3) {
+      margin-left: 0;
+    }
+
+    &:nth-child(4) {
+      margin-left: 0;
+    }
+  }
+}
 @media screen and (max-width: 1025px) {
   .header-top #js--menu {
     display: none;
@@ -10,9 +35,6 @@
   #sidebarMenu {
     display: block;
   }
-  // #sidebarMenu {
-  //   display: none;
-  // }
   .header-top__logo {
     margin-left: 4rem;
     width: 165px;
@@ -46,7 +68,6 @@
       &__action {
         display: block;
       }
-
       &__item {
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       }
@@ -54,11 +75,11 @@
   }
 
   .tabcontent .tabcontent-card {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
   }
 
   .row.section-brand .section-brand__img {
-    width: calc(100% / 2);
+    width: calc(100% / 3);
   }
 
   .row.footer-bottom,
@@ -116,9 +137,6 @@
     }
   }
 
-  section.row.section-brand {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .section-product__tab .section-product__tab--link {
     font-size: 1.5rem;
   }
@@ -126,6 +144,10 @@
   .tabcontent .tabcontent-card h3,
   .tabcontent .tabcontent-card h2 {
     margin: 0 10px;
+  }
+
+  .tabcontent .tabcontent-card .tabcontent-card__item h3 {
+    line-height: 30px;
   }
 
   .tabcontent-card .tabcontent-card__action .tabcontent-card__action--icon {
